@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button>Click</button>
+    <script>
+        let btn=document.querySelector("button");
+        function consoling(){
+            console.log('hello')
+            btn.textContent="Button was clicked"
+            btn.style.backgroundColor="aliceblue"
+        }
+        btn.addEventListener('click',consoling)
+    </script>
+    </body>
+</html>

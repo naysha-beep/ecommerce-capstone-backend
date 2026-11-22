@@ -1,0 +1,31 @@
+<!-- Creatimg a self adding list button -->
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <ul>
+        </ul>
+        <button>Add List Item</button>
+
+        <script>
+            let arr=["apple","mango","strawberry","watermelon"]
+            let list=document.querySelector("ul")
+            let btn=document.querySelector("button")
+            let count=0
+            function addListItem(){
+                if (count<arr.length)
+            {
+                let li=document.createElement('li')
+                li.innerText=arr[count]
+                list.append(li)
+                count=count+1
+            }
+        
+            
+            }
+            btn.addEventListener('child',addListItem)
+        </script>
+    </body>
+</html>

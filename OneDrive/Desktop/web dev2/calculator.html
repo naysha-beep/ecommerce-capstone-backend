@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        #container{
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            background-color:rgb(76, 58, 160);
+            justify-content: center;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        input{
+
+            font-size: 2rem;
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: none;
+
+        }
+
+        #btnContainer{
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        #btnContainer>*{
+            width: 88px;
+            padding: 10px;
+            font-size: 1.5rem;
+            background-color: aliceblue;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <input type="text" name="" id="">
+            <div id="btnContainer">
+                <button>AC</button>
+                <button>DLT</button>
+                <button>/</button>
+                <button>*</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>-</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>+</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>%</button>
+                <button>00</button>
+                <button>0</button>
+                <button>.</button>
+                <button>=</button>
+            </div>
+    </div>
+    <script>
+        let inp =document.querySelector('input');
+        let btn =document.querySelector('#btnContainer')
+
+
+        function calc(event){
+            inp.value = event.target
+            
+
+
+
+
+
+            btn.addEventListener('click',calc)
+        }
+    </script>
+</body>
+</html>

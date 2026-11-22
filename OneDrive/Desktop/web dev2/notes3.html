@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Button to add elements</title>
+    </head>
+    <body>
+        <ul>
+            <li>Milk</li>
+            <li>Carrot</li>
+            
+        </ul>
+        <button>Click to add an element</button>
+    <script>
+        let btn=document.querySelector("button");
+        function consoling(){
+            console.log('hello')
+            btn.textContent="Button was clicked"
+            btn.style.backgroundColor="aliceblue"
+        }
+        btn.addEventListener('click',consoling)
+    </script>
+    </body>
+</html>
