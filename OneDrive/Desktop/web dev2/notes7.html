@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EVENT PROPOGATION</title>
+    </head>
+    <body>
+        <div id="outer">
+            <div id="middle" >
+                <button id="inner">Click</button>
+            </div>
+        </div>
+        
+        <script>
+         function a(){
+            b()
+         }
+         function b(){
+            c()
+         }
+         function c(){
+            var a=10;
+            let b=20;
+            const c=b-a;
+            console.log(c)
+
+         }
+        a();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!-- Creatimg a self adding list button -->
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button id="btn">Click</button>
+        
+        <script>
+            let btn=document.querySelector("#btn")
+          function eventHandler(event){
+            console.log(event.target.innerText)
+
+          }
+            btn.addEventListener('child',eventHandler)
+        </script>
+    </body>
+</html>
